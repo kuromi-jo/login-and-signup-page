@@ -2,44 +2,76 @@
 <html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
 </head>
 <body>
+    
     <div class="login-container">
         <div class="login-box">
             <h1>Step Into the Woods</h1>
             <form>
 
+                <!-- ** USER INPUT ** -->
                 <div class="email-password">
-                    <input class="user-input" type="email" placeholder="&nbsp;Email" required>
-                    <input class="user-input" type="password" placeholder="&nbsp;Password" required>
-                </div>
 
+                    <!-- ** EMAIL ** -->
+                    <div class="input-container">
+                        <input class="user-input" type="email" placeholder="&nbsp;Email" required>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
+                                    1.1.9 2 2 2h16c1.1 0 2-.9 
+                                    2-2V6c0-1.1-.9-2-2-2zm0 
+                                    4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+
+                    <!-- ** PASSWORD ** -->
+                    <div class="input-container">
+                        <input class="user-input" type="password" placeholder="&nbsp;Password" required>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2a5 5 0 0 0-5 5v3H6c-1.1 0-2 
+                                    .9-2 2v9c0 1.1.9 2 2 2h12c1.1 0 
+                                    2-.9 2-2v-9c0-1.1-.9-2-2-2h-1V7a5 
+                                    5 0 0 0-5-5zm0 2a3 3 0 0 1 3 
+                                    3v3H9V7a3 3 0 0 1 3-3zm0 
+                                    10a2 2 0 1 1 0 4 2 2 0 
+                                    0 1 0-4z"/>
+                        </svg>
+                    </div>
+                </div> <!-- ** END OF USER INPUT ** -->
+
+                <!-- ** REMEMBER ME / FORG0T PASSWORD ** -->
                 <div class="remember-forget">
+
+                    <!-- ** REMEMBER PASSWORD ** -->
                     <div class="remember-me">
                         <input type="checkbox" id="remember" name="remember-me">
                         <label for="remember">Remember Me</label>
                     </div>
 
+                    <!-- ** FORGOT PASSWORD ** -->
                     <div class="forgot-password">
                         <a>Forgot Password?</a>
                     </div>
                 </div>
                 
+                <!-- ** LOGIN BUTTON ** -->
                 <button type="submit" class="login-btn">Login</button>
+
+                <!-- ** SIGN UP BUTTON HYPERLINK ** -->
                 <p class="journey-text">
                     Not part of the journey yet?
-                    <a href="#" class="sign-up">Begin here</a>
+                    <a href="sign-up.html" class="sign-up">Begin here</a>
                 </p>
 
             </form>
         </div>
     </div>
-
-    
     
 </body>
 </html>
