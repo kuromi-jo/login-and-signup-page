@@ -53,58 +53,27 @@ body {
     box-shadow: none;
 }
 
+.input-container .icon {
+    position: absolute;
+    right: 10px;              
+    top: 45%;
+    transform: translateY(-50%);
+    width: 24px;             
+    height: 24px;
+    object-fit: contain;
+    pointer-events: none;   
+    color: #2D1F37;  
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
 .email-password {
     display: flex;   
     flex-direction: column;
     gap: 50px;      
-}
-
-.remember-me input[type="checkbox"] {
-    display: none;
-}
-.remember-me label {
-    position: relative;
-    padding-left: 20px; 
-    cursor: pointer;
-    color: #2D1F37;    
-    font-size: 14px;
-}
-
-.remember-me label::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0.8em;
-    height: 0.8em;
-    border: 2px solid #2D1F37; 
-    border-radius: 0.2em;
-    background-color: transparent; 
-    transition: background-color 0.2s; 
-}
-
-.remember-me input[type="checkbox"]:checked + label::before {
-    background-color: #2D1F37;
-    border-color: #2D1F37;    
-}
-
-.remember-me input[type="checkbox"]:checked + label::after {
-    content: "\2713";
-    position: absolute;
-    left: 3.8px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 10px;
-}
-
-.remember-forget {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-
 }
 
 .forgot-password {
@@ -131,9 +100,9 @@ body {
     transform: scaleX(1);
 }
 
-.login-btn {
+.sign-up-btn {
     display: block;           
-    margin: 30px auto 0 auto; 
+    margin: 35px auto 0 auto; 
     box-sizing: border-box;
     width: 100%; 
     padding: 12px;
@@ -146,7 +115,7 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.login-btn:hover {
+.sign-up-btn:hover {
     background-color: #1a1423; 
     transform: translateY(-2px); 
 }
@@ -157,7 +126,7 @@ body {
     padding-top: 20px;
 }
 
-.journey-text .sign-up {
+.journey-text .login {
     position: relative;       
     color: #2D1F37;
     font-weight: bold;
@@ -166,7 +135,7 @@ body {
     cursor: pointer;
 }
 
-.journey-text .sign-up::after {
+.journey-text .login::after {
     content: "";
     position: absolute;
     left: 0;
@@ -179,6 +148,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.journey-text .sign-up:hover::after {
+.journey-text .login:hover::after {
     transform: scaleX(1);    
 }
